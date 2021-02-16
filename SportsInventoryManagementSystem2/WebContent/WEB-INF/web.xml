@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<display-name>Sports Management Web Application</display-name>
+	<description>Project</description>
+  <welcome-file-list>
+    <welcome-file>homepage.html</welcome-file>
+    <welcome-file>homepage.htm</welcome-file>
+    <welcome-file>homepage.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+ <servlet>
+    <servlet-name>Indexcontroller</servlet-name>
+    <servlet-class>net.sports.management.web.SportsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Indexcontroller</servlet-name>
+    <url-pattern>/Indexcontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>new</servlet-name>
+    <servlet-class>net.sports.management.web.SportsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>new</servlet-name>
+    <url-pattern>/new</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <servlet-name>list</servlet-name>
+    <servlet-class>net.sports.management.web.SportsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>list</servlet-name>
+    <url-pattern>/list</url-pattern>
+  </servlet-mapping> 
+  
+ <servlet>
+    <servlet-name>insert</servlet-name>
+    <servlet-class>net.sports.management.web.SportsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insert</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  </servlet-mapping> 
+    
+    <servlet>
+    <servlet-name>delete</servlet-name>
+    <servlet-class>net.sports.management.web.SportsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping> 
+    
+    <servlet>
+    <servlet-name>edit</servlet-name>
+    <servlet-class>net.sports.management.web.SportsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>edit</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping> 
+    
+   <servlet>
+    <servlet-name>update</servlet-name>
+    <servlet-class>net.sports.management.web.SportsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <servlet-name>search</servlet-name>
+    <servlet-class>net.sports.management.web.SportsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>search</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/Error.jsp</location>
+	</error-page>
+</web-app>

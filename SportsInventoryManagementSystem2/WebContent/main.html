@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>Maaz Mehter(MM)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="stylescss.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+    <div class="mm-top">
+  <div class="mm-bar mm-white mm-wide mm-padding mm-card">
+    <a href="#home" class="mm-bar-item mm-button"><b>MAAZ MEHTER</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="mm-right mm-hide-small">
+      
+      <a href="#about" class="mm-bar-item mm-button">About Me</a>
+        
+    <a href="#contact" class="mm-bar-item mm-button">Contact</a>
+      <a href="photos.html" class="mm-bar-item mm-button">Photos</a>
+      <a href="videos.html" class="mm-bar-item mm-button">Videos</a>
+        <a href="hobbies.html" class="mm-bar-item mm-button">Hobbies</a>
+    
+      </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="mm-display-container mm-content mm-wide" style="max-width:1500px;" id="home">
+  <img class="mm-image"  alt="just a header" width="1500" height="800">
+  <div class="mm-display-middle mm-margin-top mm-center">
+    <h1 class="mm-xxlarge mm-text-white"><span class="mm-padding mm-black mm-opacity-min"><b>MaazMehter</b></span> <span class="mm-hide-small mm-text-light-grey"></span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="mm-content mm-padding" style="max-width:1564px">
+
+ 
+
+  <!-- About Me Section -->
+  <div class="mm-container mm-padding-32" id="about">
+    <h3 class="mm-border-bottom mm-border-light-grey mm-padding-16">About Me</h3>
+      <img src="me.JPG" alt="a picture of me" style="width:100%">
+    <p>I am a graduate Student pursuing Masters of Science in Management Information Systems (MSMIS) at the University of Illinois at Chicago(UIC). Originally from the Silicon Valley of India (Bangalore, India), I have completed my Bachelors of Engineering (BE) in Telecommunication Engineering (TCE) from Visvesvaraya Technological University (VTU) and have professional work experience close to 2 years at Hewlett Packard Enterprise(HPE) as a Technology Solution Consultant.
+    </p>
+  </div>
+
+ <h2>Logo</h2>
+
+<div class="row">
+  <div class="column" style="white-space: normal">
+    <img src="uic.png" alt="UIC Logo" style="width:100%">
+  </div>  
+    <div class="column" style="white-space: normal">
+    <img src="vtu.png" alt="VTU Logo" style="width:100%">
+  </div>  
+    <div class="column" style="white-space: normal">
+    <img src="hpe.jpg" alt="HPE Logo" style="width:100%">
+  </div>
+</div>
+
+
+
+  <!-- Contact Section -->
+  <div class="mm-container mm-padding-32" id="contact">
+    <h3 class="mm-border-bottom mm-border-light-grey mm-padding-16">Contact</h3>
+    <p>Feel free to get in touch.</p>
+   
+      <input class="mm-input mm-border" type="text" placeholder="Name" required name="Name">
+      <input class="mm-input mm-section mm-border" type="text" placeholder="Email" required name="Email">
+      <input class="mm-input mm-section mm-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="mm-input mm-section mm-border" type="text" placeholder="Comment" required name="Comment">
+          <button class="mm-button mm-black mm-section" type="submit" onclick="myFunction()">
+
+<p id="submit">SEND MESSAGE</p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Send Email?")) {
+    txt = "Email Sent";
+  } else {
+    txt = "Cancelled";
+  }
+  document.getElementById("submit").innerHTML = txt;
+}
+</script>
+        
+         
+      </button>
+      <br>
+    <img src="social.JPG" alt="Social" style="width:15%">
+    
+  </div>
+  
+<!-- Image of location/map -->
+<div class="mm-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380513.71601800894!2d-88.01215000586734!3d41.83339249957157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1583499212049!5m2!1sen!2sus" width="1600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <br>
+    
+    <br>
+    
+    <h3 class="mm-border-bottom mm-border-light-grey mm-padding-16"><center>"We are, after all at the tip of the iceberg"</center></h3>
+    <p><i><center>Maaz Mehter</center></i></p>
+    <br>
+     
+    
+    <img src="iceberg.jpg" alt="Iceberg" style="width:100%">
+    
+</div>
+    
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="mm-center mm-black mm-padding-16">
+  <p>All Rights Reserved<br>Exclusive Work by Maaz Mehter&trade;<br> Want to know more about Trademark and exclusive rights? Click on the link--> <a href="https://en.wikipedia.org/wiki/Trademark" title="TM" target="_blank" class="mm-hover-text-green">TM</a></p>
+</footer>
+
+
+</body>
+</html>
